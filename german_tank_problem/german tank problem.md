@@ -1,7 +1,7 @@
 
 German Tank Problem Shiny app
 ========================================================
-author: Risto
+author: Risto Hinno
 date: April 2015
 
 German Tank Problem app
@@ -11,11 +11,11 @@ You have to guess number of tanks produced size based on serial numbers of few t
 
 - For example you have captured 5 tanks with serial numbers 73, 5, 83, 49, 25. What is actual tank production?
 
-- [Shiny application](https://ristohinno.shinyapps.io/GermanTankProblemApp/) provides and compares different solutions
+- [Shiny application](https://ristohinno.shinyapps.io/GermanTankProblemApp/) simulates and compares different solutions
 
 -[Github repository](https://github.com/RRisto/GermanTankProblem)
 
-![alt text](figures/tank.png)
+![alt text](figures/tank.png); ![alt text](figures/crushed2.png)
 
 Models for simulation
 ========================================================
@@ -28,22 +28,14 @@ Models for simulation
 
 - **Model 3**, formula originally used by allies: $$actual\ tank\ production = max + \frac{max}{n} - 1$$ (max - maximum serial number captured; n - number of tanks captured)
 
-Compare different models (1)
+Compare different models (1): residuals boxplot
 ========================================================
 
-App simulates 10 guesses per model for each tank in actual chosen prodcution range. Accuracy of models is assessed by residuals:
-
- - residuals (as % difference from actual production) summary:
 
 
-```
-    Model        Mean    Median       Sd
-1 Model 1 -16.2327080 -12.49809 14.12948
-2 Model 2 -12.0443434  -8.12299 14.83595
-3 Model 3  -0.2906281   4.19314 16.95818
-```
+<center><iframe scrolling='no' seamless='seamless' style='border:none' src='https://plot.ly/~risto.hinno/147/800/1200' width='900' height='600'></iframe><center>
 
-![alt text](figures/crushed2.png)
+
 
 Compare different models (2): residuals histogram
 ========================================================
