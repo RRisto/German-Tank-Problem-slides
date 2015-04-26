@@ -22,11 +22,11 @@ Models for simulation
 
 - Change number of **tanks captured**, actual tank **production range** and **margin** for model 2 and compare how good different models are:
 
-- **[Model 1](https://ristohinno.shinyapps.io/GermanTankProblem/)**, highest serial number captured = actual tank production
+- **Model 1**, highest serial number captured = actual tank production
 
-- **[Model 2](https://ristohinno.shinyapps.io/GermanTankProblem/)**, model 1 answer +(model 1 answer * margin) = actual tank production
+- **Model 2**, model 1 answer +(model 1 answer * margin) = actual tank production
 
-- **[Model 3](https://ristohinno.shinyapps.io/GermanTankProblem/)**, formula originally used by allies: $$actual\ tank\ production = max + \frac{max}{n} - 1$$ (max - maximum serial number captured; n - number of tanks captured)
+- **Model 3**, formula originally used by allies: $$actual\ tank\ production = max + \frac{max}{n} - 1$$ (max - maximum serial number captured; n - number of tanks captured)
 
 Compare different models (1)
 ========================================================
